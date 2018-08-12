@@ -1,0 +1,26 @@
+{
+  "name": "landing_page",
+  "version": "1.0.0",
+  "description": "My Landing Page",
+  "main": "server.js",
+  "repository": "",
+  "author": "John Simmons",
+  "scripts": {
+    "start:m": "nodemon server.js",
+    "start:s": "node server.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.2",
+    "morgan": "^1.9.0",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}
