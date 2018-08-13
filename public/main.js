@@ -1787,23 +1787,51 @@ var WebSocketService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/assets/articles/example.js":
-/*!****************************************!*\
-  !*** ./src/assets/articles/example.js ***!
-  \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./src/assets/articles/index.js":
+/*!**************************************!*\
+  !*** ./src/assets/articles/index.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = {
-    id: '12345',
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _list_example_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./list/example.js */ "./src/assets/articles/list/example.js");
+/* harmony import */ var _list_start_a_blog_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./list/start_a_blog.js */ "./src/assets/articles/list/start_a_blog.js");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    example: _list_example_js__WEBPACK_IMPORTED_MODULE_0__["default"],
+    start_a_blog: _list_start_a_blog_js__WEBPACK_IMPORTED_MODULE_1__["default"]
+});
+
+
+/***/ }),
+
+/***/ "./src/assets/articles/list/example.js":
+/*!*********************************************!*\
+  !*** ./src/assets/articles/list/example.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! uuid */ "./node_modules/uuid/index.js");
+/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(uuid__WEBPACK_IMPORTED_MODULE_0__);
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    id: Object(uuid__WEBPACK_IMPORTED_MODULE_0__["v4"])(),
     topic: 'Technology',
     title: 'Example Article',
-    image: '../../assets/default-image.jpg',
+    image: '../../assets/articles/images/default_image.jpg',
     content: `
 Heading
 =======
 
-![Default Picture](../../assets/default-image.jpg)
+![Default Picture](../../assets/articles/images/default_image.jpg)
 
 Sub-heading
 -----------
@@ -1831,32 +1859,39 @@ Numbered list:
 The rain---not the reign---in Spain.
 
 *[Herman Fassett](https://freecodecamp.com/hermanfassett)*
-`};
+`});
+
 
 /***/ }),
 
-/***/ "./src/assets/articles/index.js":
-/*!**************************************!*\
-  !*** ./src/assets/articles/index.js ***!
-  \**************************************/
+/***/ "./src/assets/articles/list/start_a_blog.js":
+/*!**************************************************!*\
+  !*** ./src/assets/articles/list/start_a_blog.js ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _example_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./example.js */ "./src/assets/articles/example.js");
-/* harmony import */ var _example_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_example_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! uuid */ "./node_modules/uuid/index.js");
+/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(uuid__WEBPACK_IMPORTED_MODULE_0__);
 
-// import exampleI from './exampleI.js';
-// import exampleII from './exampleII.js';
-// import exampleIII from './exampleIII.js';
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    example: (_example_js__WEBPACK_IMPORTED_MODULE_0___default()),
-    // exampleI,
-    // exampleII,
-    // exampleIII
+  id: Object(uuid__WEBPACK_IMPORTED_MODULE_0__["v4"])(),
+  topic: 'Technology',
+  title: 'Start a Blog',
+  image: '../../assets/articles/images/stock_desert.jpg',
+  content: `
+Another Heading
+===============
+
+![Empty Desert](../../assets/articles/images/stock_desert.jpg)
+
+This is a sub-heading!
+`
 });
+
 
 /***/ }),
 
@@ -1887,7 +1922,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_0__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/ubuntu/workspace/angular-src/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Workshop\jgsimmons.me\angular-src\src\main.ts */"./src/main.ts");
 
 
 /***/ }),
