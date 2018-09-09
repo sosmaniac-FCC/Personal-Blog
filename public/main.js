@@ -90,6 +90,30 @@ var AppComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/app.config.js":
+/*!*******************************!*\
+  !*** ./src/app/app.config.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// development
+// export default { serverURL: 'https://localhost:8443' };
+
+// production
+/* harmony default export */ __webpack_exports__["default"] = ({ serverURL: `${window.location.protocol}//${window.location.host}` });
+
+// do not try this again
+// export default fetch('/server-environment')
+//   .then(response => response.json())
+//   .then(url => Promise.resolve({ serverURL: url }))
+//   .catch(error => Promise.reject(`ERROR => ${error}`));
+
+
+/***/ }),
+
 /***/ "./src/app/app.module.ts":
 /*!*******************************!*\
   !*** ./src/app/app.module.ts ***!
@@ -252,7 +276,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "p-button {\n    display: flex;\n    justify-content: center;\n}\n\np-button:nth-of-type(1) {\n    margin-top: 20px;\n}\n\np-button:nth-of-type(2) {\n    margin-bottom: 20px;\n}\n\np-card {\n    display: flex;\n    margin: 20px 0 10px 0;\n    justify-content: center;\n}\n\np-card article {\n    font-size: 20px;\n}\n\nsection {\n    display: flex;\n    justify-content: center;\n    flex-direction: column;\n    align-items: center;\n}\n\nform .ui-inputgroup {\n    display: flex;\n    justify-content: center;\n}\n\nform p-button {\n    display: block;\n    width: 100%;\n}\n\nform textarea {\n    margin-top: 3px;\n    width: 95%;\n    resize: none;\n}\n\nform p-button {\n    margin-top: 0;\n}\n\n.comment-block {\n    box-sizing: border-box;\n    border: 1px solid lightgrey;\n    padding: 3px 0 5px 0;\n    text-align: center;\n    background-color: white;\n    margin-bottom: 5px;\n    width: 60%;\n}\n\n#comment-section .comment-block {\n    padding-top: 0;\n}\n\n#comment-section .comment-block h3 {\n    margin: 5px 10px;\n}\n\n#comment-section .comment-title {\n    display: flex;\n    justify-content: space-between;\n    background-color: whitesmoke;\n    margin: 0;\n    padding: 0;\n}\n\n#comment-section .comment-block pre {\n    text-align: left;\n    margin: 10px;\n}\n\nsection #comment-section {\n    display: flex;\n    justify-content: center;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n}\n\nsection #comment-form {\n    border-radius: 0 0 5px 5px;\n    margin: 5px 0 20px 0;\n}\n\n@media only screen and (max-width: 992px) {\n    .comment-block {\n        width: 70%;\n    }\n}\n\n@media only screen and (max-width: 760px) {\n    .comment-block {\n        width: 85%;\n    }\n}\n\n@media only screen and (max-width: 600px) {\n    .comment-block {\n        width: 100%;\n    }\n}"
+module.exports = "p-button {\n    display: flex;\n    justify-content: center;\n}\n\np-button:nth-of-type(1) {\n    margin-top: 20px;\n}\n\np-button:nth-of-type(2) {\n    margin-bottom: 20px;\n}\n\np-card {\n    display: flex;\n    margin: 20px 0 10px 0;\n    justify-content: center;\n}\n\np-card article {\n    font-size: 20px;\n}\n\nsection {\n    display: flex;\n    justify-content: center;\n    flex-direction: column;\n    align-items: center;\n}\n\nform .ui-inputgroup {\n    display: flex;\n    justify-content: center;\n}\n\nform p-button {\n    display: block;\n    width: 100%;\n}\n\nform textarea {\n    margin-top: 3px;\n    width: 95%;\n    resize: none;\n}\n\nform p-button {\n    margin-top: 0;\n}\n\n.comment-block {\n    box-sizing: border-box;\n    border: 1px solid lightgrey;\n    padding: 3px 0 5px 0;\n    text-align: center;\n    background-color: white;\n    margin-bottom: 5px;\n    width: 60%;\n}\n\n#article-md {\n  line-height: 30px;\n}\n\n#comment-section .comment-block {\n    padding-top: 0;\n}\n\n#comment-section .comment-block h3 {\n    margin: 5px 10px;\n}\n\n#comment-section .comment-title {\n    display: flex;\n    justify-content: space-between;\n    background-color: whitesmoke;\n    margin: 0;\n    padding: 0;\n}\n\n#comment-section .comment-block pre {\n    text-align: left;\n    margin: 10px;\n}\n\nsection #comment-section {\n    display: flex;\n    justify-content: center;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n}\n\nsection #comment-form {\n    border-radius: 0 0 5px 5px;\n    margin: 5px 0 20px 0;\n}\n\n@media only screen and (max-width: 992px) {\n    .comment-block {\n        width: 70%;\n    }\n}\n\n@media only screen and (max-width: 760px) {\n    .comment-block {\n        width: 85%;\n    }\n}\n\n@media only screen and (max-width: 600px) {\n    .comment-block {\n        width: 100%;\n    }\n}\n"
 
 /***/ }),
 
@@ -393,7 +417,7 @@ module.exports = "header h3 {\n    font-style: italic;\n    text-align: center;\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<header>\n    <h3>Everything I care about, I write about!</h3>\n</header>\n<main>\n    <app-tab-view></app-tab-view>\n</main>\n<footer>\n    <h3>Articles written weekly</h3>\n</footer>"
+module.exports = "<header>\n    <h3>Everything I care about, I write about weekly!</h3>\n</header>\n<main>\n    <app-tab-view></app-tab-view>\n</main>\n"
 
 /***/ }),
 
@@ -422,7 +446,7 @@ var BlogComponent = /** @class */ (function () {
     function BlogComponent() {
     }
     // hacky but necessary
-    BlogComponent.prototype.ngAfterViewChecked = function () {
+    BlogComponent.prototype.ngDoCheck = function () {
         window.dispatchEvent(new Event('resize'));
     };
     BlogComponent = __decorate([
@@ -447,7 +471,7 @@ var BlogComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".ui-grid {\n    cursor: pointer;\n}\n\nh3 {\n    text-align: center;\n}\n\nimg {\n    height: 100%;\n    min-height: 200px;\n    max-height: 350px;\n    width: 100%;\n}"
+module.exports = ".ui-grid {\n    cursor: pointer;\n}\n\nh3, h5 {\n    text-align: center;\n}\n\nimg {\n    height: 100%;\n    min-height: 200px;\n    max-height: 350px;\n    width: 100%;\n}\n"
 
 /***/ }),
 
@@ -458,7 +482,7 @@ module.exports = ".ui-grid {\n    cursor: pointer;\n}\n\nh3 {\n    text-align: c
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p-carousel *ngIf=\"!noContent\" [value]=\"articles\" breakpoint=\"600\" responsive=\"true\" headerText=\"Articles on {{this.header}}\">\n    <ng-template let-article pTemplate=\"item\">\n        <div class=\"ui-grid ui-grid-responsive highlight-card\" routerLink=\"/blog/{{article.id}}\">\n            <div class=\"ui-grid-row\">\n                <div class=\"ui-grid-col-12\"><h3>{{article.title}}</h3></div>\n            </div>\n            <div class=\"ui-grid-row\">\n                <div class=\"ui-grid-col-12\"><img [src]=\"article.image\" width=\"60\"></div>\n            </div>\n        </div>\n    </ng-template>\n</p-carousel>\n<h3 *ngIf=\"noContent\">No articles available for this topic.</h3>\n"
+module.exports = "<p-carousel *ngIf=\"!noContent\" [value]=\"articles\" breakpoint=\"600\" responsive=\"true\" headerText=\"Articles on {{this.header}}\">\n    <ng-template let-article pTemplate=\"item\">\n        <div class=\"ui-grid ui-grid-responsive highlight-card\" routerLink=\"/blog/{{article.id}}\">\n            <div class=\"ui-grid-row\">\n                <div class=\"ui-grid-col-6\"><h3>{{article.title}}</h3></div>\n                <div class=\"ui-grid-col-6\"><h5>Written: {{article.date}}</h5></div>\n            </div>\n            <div class=\"ui-grid-row\">\n                <div class=\"ui-grid-col-12\"><img [src]=\"article.image\" width=\"60\"></div>\n            </div>\n        </div>\n    </ng-template>\n</p-carousel>\n<h3 *ngIf=\"noContent\">No articles available for this topic.</h3>\n"
 
 /***/ }),
 
@@ -492,10 +516,7 @@ var TabContentComponent = /** @class */ (function () {
     }
     TabContentComponent.prototype.ngOnInit = function () {
         this.articles = this.cacheService.getArticles(this.header);
-        if (this.articles.length === 0)
-            this.noContent = true;
-        else
-            this.noContent = false;
+        this.noContent = this.articles.length === 0 ? true : false;
     };
     __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
@@ -561,7 +582,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var TabViewComponent = /** @class */ (function () {
     function TabViewComponent() {
-        this.headers = ['Technology', 'Education', 'Wellness'];
+        this.headers = ['Technology & Education', 'Life & Wellness'];
     }
     TabViewComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -1395,19 +1416,6 @@ var ResumeComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/config.js":
-/*!***************************!*\
-  !*** ./src/app/config.js ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = {
-    serverURL: 'https://landing-page-project-sosmaniac.c9users.io:8080'
-};
-
-/***/ }),
-
 /***/ "./src/app/modules/app-routing/app-routing.module.ts":
 /*!***********************************************************!*\
   !*** ./src/app/modules/app-routing/app-routing.module.ts ***!
@@ -1563,7 +1571,6 @@ var CacheService = /** @class */ (function () {
                 this.selectArticles.push(this.allArticles[i]);
             }
         }
-        // to-do: sort articles by timestamp
         return this.selectArticles;
     };
     CacheService.prototype.getArticle = function (id) {
@@ -1603,8 +1610,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../config */ "./src/app/config.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _app_config_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../app.config.js */ "./src/app/app.config.js");
 /* harmony import */ var _logger_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./logger.service */ "./src/app/services/logger.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1619,14 +1625,13 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
-// map operator implementation?
 
 
 var HttpService = /** @class */ (function () {
     function HttpService(logger, http) {
         this.logger = logger;
         this.http = http;
-        this.baseURL = _config__WEBPACK_IMPORTED_MODULE_4___default.a.serverURL;
+        this.serverURL = _app_config_js__WEBPACK_IMPORTED_MODULE_4__["default"].serverURL;
     }
     HttpService.prototype.log = function (message) {
         this.logger.add(message);
@@ -1636,12 +1641,12 @@ var HttpService = /** @class */ (function () {
         if (operation === void 0) { operation = 'operation'; }
         return function (error) {
             _this.log(operation + " failed: " + error);
-            return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(result); // parsed observable
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(result);
         };
     };
     HttpService.prototype.getCommentsForArticle = function (articleId) {
         var _this = this;
-        return this.http.get(this.baseURL + "/allComments?id=" + articleId)
+        return this.http.get(this.serverURL + "/allComments?id=" + articleId)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(function () { return _this.log("Getting all comments concerning: " + articleId); }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError('getCommentsForArticle', articleId)));
     };
     HttpService.prototype.postCommentToArticle = function (name, comment, articleId) {
@@ -1649,7 +1654,7 @@ var HttpService = /** @class */ (function () {
         var httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({ 'Content-Type': 'application/json' })
         };
-        return this.http.post(this.baseURL + "/newComment", { name: name, comment: comment, postedTo: articleId }, httpOptions)
+        return this.http.post(this.serverURL + "/newComment", { name: name, comment: comment, postedTo: articleId }, httpOptions)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(function () { return _this.log("Posting new comment submitted by: " + name); }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError('postCommentToArticle', comment)));
     };
     HttpService.prototype.postMessage = function (name, message) {
@@ -1657,7 +1662,7 @@ var HttpService = /** @class */ (function () {
         var httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]({ 'Content-Type': 'application/json' })
         };
-        return this.http.post(this.baseURL + "/newMessage", { name: name, message: message }, httpOptions)
+        return this.http.post(this.serverURL + "/newMessage", { name: name, message: message }, httpOptions)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["tap"])(function () { return _this.log("Posting new messaged submitted by: " + name); }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(this.handleError('postMessage', message)));
     };
     HttpService = __decorate([
@@ -1733,8 +1738,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var socket_io_client__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(socket_io_client__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var rxjs_Observable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/Observable */ "./node_modules/rxjs-compat/_esm5/Observable.js");
 /* harmony import */ var rxjs_Rx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/Rx */ "./node_modules/rxjs-compat/_esm5/Rx.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../config */ "./src/app/config.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _app_config_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../app.config.js */ "./src/app/app.config.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1751,10 +1755,11 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var WebSocketService = /** @class */ (function () {
     function WebSocketService() {
+        this.serverURL = _app_config_js__WEBPACK_IMPORTED_MODULE_4__["default"].serverURL;
     }
     WebSocketService.prototype.connect = function () {
         var _this = this;
-        this.socket = socket_io_client__WEBPACK_IMPORTED_MODULE_1__(_config__WEBPACK_IMPORTED_MODULE_4___default.a.serverURL);
+        this.socket = socket_io_client__WEBPACK_IMPORTED_MODULE_1__(this.serverURL);
         var observable = new rxjs_Observable__WEBPACK_IMPORTED_MODULE_2__["Observable"](function (observer) {
             _this.socket.on('comment', function (data) {
                 console.log('Socket received:', data);
@@ -1797,13 +1802,22 @@ var WebSocketService = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _list_example_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./list/example.js */ "./src/assets/articles/list/example.js");
-/* harmony import */ var _list_start_a_blog_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./list/start_a_blog.js */ "./src/assets/articles/list/start_a_blog.js");
+/* harmony import */ var _list_fall_semester_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./list/fall_semester.js */ "./src/assets/articles/list/fall_semester.js");
+/* harmony import */ var _list_internships_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./list/internships.js */ "./src/assets/articles/list/internships.js");
+/* harmony import */ var _list_starting_a_blog_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./list/starting_a_blog.js */ "./src/assets/articles/list/starting_a_blog.js");
+/* harmony import */ var _list_teaching_assistant_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./list/teaching_assistant.js */ "./src/assets/articles/list/teaching_assistant.js");
+
+
+
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     example: _list_example_js__WEBPACK_IMPORTED_MODULE_0__["default"],
-    start_a_blog: _list_start_a_blog_js__WEBPACK_IMPORTED_MODULE_1__["default"]
+    fall_semester: _list_fall_semester_js__WEBPACK_IMPORTED_MODULE_1__["default"],
+    internships: _list_internships_js__WEBPACK_IMPORTED_MODULE_2__["default"],
+    starting_a_blog: _list_starting_a_blog_js__WEBPACK_IMPORTED_MODULE_3__["default"],
+    teaching_assistant: _list_teaching_assistant_js__WEBPACK_IMPORTED_MODULE_4__["default"]
 });
 
 
@@ -1818,13 +1832,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! uuid */ "./node_modules/uuid/index.js");
-/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(uuid__WEBPACK_IMPORTED_MODULE_0__);
-
-
 /* harmony default export */ __webpack_exports__["default"] = ({
-    id: Object(uuid__WEBPACK_IMPORTED_MODULE_0__["v4"])(),
-    topic: 'Technology',
+    id: '0',
+    topic: 'Technology & Education',
+    date: '06/15/2018',
     title: 'Example Article',
     image: '../../assets/articles/images/default_image.jpg',
     content: `
@@ -1864,31 +1875,276 @@ The rain---not the reign---in Spain.
 
 /***/ }),
 
-/***/ "./src/assets/articles/list/start_a_blog.js":
-/*!**************************************************!*\
-  !*** ./src/assets/articles/list/start_a_blog.js ***!
-  \**************************************************/
+/***/ "./src/assets/articles/list/fall_semester.js":
+/*!***************************************************!*\
+  !*** ./src/assets/articles/list/fall_semester.js ***!
+  \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! uuid */ "./node_modules/uuid/index.js");
-/* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(uuid__WEBPACK_IMPORTED_MODULE_0__);
-
-
 /* harmony default export */ __webpack_exports__["default"] = ({
-  id: Object(uuid__WEBPACK_IMPORTED_MODULE_0__["v4"])(),
-  topic: 'Technology',
-  title: 'Start a Blog',
+    id: '3',
+    topic: 'Technology & Education',
+    date: '08/27/2018',
+    title: 'Fall Semester',
+    image: '../../assets/articles/images/stock_fall_walkway.jpg',
+    content: `
+Fall Semester
+=============
+##### 08/27/2018
+
+![Fall Walkway](../../assets/articles/images/stock_fall_walkway.jpg)
+
+The first day of classes has concluded. My University's computer science program is currently larger than ever. Familiar faces I have not seen in months are now a near-daily occurrence. New construction is happening everywhere on campus. Everything feels so different compared to last week and the previous two semesters.
+
+I failed to comprehend it the first time around, but University life feels so brittle. It somehow manages to exist off of students' fortunes or lack there-of in the case of student loans.
+
+Granted, University costs are somewhat justified. University exposes people to the peaks of achievable skill and knowledge concerning most professions. People ply themselves against so many different professions wherein each boasts an incredibly high proficiency-ceiling.
+
+One of the first proficiency-based professions I can think of is painting. A master painter is as obvious as the mid-day sun. I can behold his or her work ontop of a canvas and easily discern the painter's level of proficiency. That said, I would not qualify to give a professional art opinion. Regardless, I have attempted enough paintings to appreciate those who can make the paintbrush sing.
+
+The idea of mastery, as exemplified with painting, is my motto for this semester. I want to produce the rough equivalent of a painted masterpiece in terms of programmatic logic. That may mean my biggest project yet. Perhaps it means going above and beyond in my classes. I am not 100% sure yet. Truth be told, I may lack the necessary experience to produce masterpieces. That does not mean I cannot try.
+
+My class schedule lists 19 credit hours of both computer science and mathematics. This is the sort of challenge I need to push myself towards programmatic mastery. The pursuit of mastery offers unparalled fulfillment matched only by its difficulty to pursue.
+
+I will keep at it as best as I can. Even now I am running short on time to write and publish this article due to classes. I apologize for stopping short. Trust me when I say that I will manage my time better for next Monday's blog post/article.
+`
+});
+
+
+/***/ }),
+
+/***/ "./src/assets/articles/list/internships.js":
+/*!*************************************************!*\
+  !*** ./src/assets/articles/list/internships.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  id: '2',
+  topic: 'Technology & Education',
+  date: '08/20/2018',
+  title: 'Internships',
+  image: '../../assets/articles/images/stock_light_bulb.jpg',
+  content: `
+College Internships
+===================
+##### 08/20/2018
+
+![Light Bulb](../../assets/articles/images/stock_light_bulb.jpg)
+
+My transition from high school to College was worrisome. I had to take on my first student loan where I would be owing more than $2000 to the government. I thought this was so risky yet very necessary.
+
+I had no luck applying for scholarships offered by my College and home County. My funds from working the grocery store provided much-needed leeway for most of my College-related expenses. The financial burden was so surreal. It felt as if I was stepping into ice-cold water for the very first time. There was no going back.
+
+My first instinct was my Checking Account. I believed that I had to replenish those funds. I jumped at the first opportunity to work at a University call center.
+
+I had no idea what I was getting into. It turns out asking people for money over the phone was way beyond my sanity. It would have been much better if I had something to offer in return for money. That was not the case at this call center. Thankfully, I did succeed in securing very minor donations. Each success came at great cost to my sanity however. I tapped out of the job after a mere couple days.
+
+I turned elsewhere in the University to earn some funds. I landed upon my first pseudo-internship with the University's Small Business Development Center. This position was not exactly money-making at 10 hours a week, $10 per hour. I no longer cared as much about the pay.
+
+The work had me attending workshops and studying basic web development. These work/study experiences made the job worth much more than the pay. Earning money while performing engaging work was possible even if not financially optimal. I had done the numbers realizing that my financials were not that bad, so I went all-in with the internship while pursuing my College studies.
+
+The people running the internship program were very kind. The things I did there were not always beneficial but neither were they harmful. I dedicated days to learning the ins-and-outs of Front End development concepts. This was not productive from a business perspective. From a personal perspective, it meant becoming a better programmer.
+
+What made the learning process all the more fulfilling was the people overseeing my efforts. They actually approved of my studies. This motivated me to keep learning especially during the downtime.
+
+In fact, I spent so much time beyond the weekly 10 hours learning how to program. I got to the point where I could develop a website from scratch. Unfortunately, the website my bosses had in mind for me to develop never surfaced. Other business concerns took priority.
+
+I wrote multiple reports instead. They offered insight into the various cybersecurity workshops I attended. It turns out small businesses are very susceptible to cyber crime. The workshops discussed various methods to improve cybersecurity posture from a business standpoint.
+
+Distilling workshop details into simple reports became my way of helping out. The reports were convenient for some of the other interns from my University's College of Business. I myself hailed from the College of Engineering.
+
+Other than those reports, there was a whole lot of downtime. I dedicated every bit of it to learning Front End Development with ReactJS. My first exposure with React led to months of studying and practicing its core concepts.
+
+Several months later, my first College semester was coming to an end alongside my first internship. It was time for Winter Break. With the skills developed during my internship, I built several websites. Each one was inspired by the [freecodecamp.com](https://www.freecodecamp.org) curriculum.
+
+Moving past Winter break onto my next semester, I had a couple of finished websites to boost my resume with. These projects landed me my second internship going forward into the Summer. To be frank, I was extremely blessed to land this second internship. I daresay it was a miracle made possible through prayer, hard work, and the acknowledgement of a single recruiter.
+
+The second internship was a level-up in experience and pay. The people, although completely unique from my first internship, were just as kind. This time around I got to work 40 hours a week at $15 per hour. Hallelujah!
+
+With this second internship, I received my first taste of the real-world. I worked with two other senior-level developers on many different projects. Across many weeks, I learned so much from these two mentors not only in terms of technology, but also in regards to everyday life skills. I will cherish their compassion forever.
+
+Simply put, internships are indescribably valuable.
+
+## My Message to the Reader
+
+If not successful at first, apply, apply, and apply again for internships. If you are not applying, then study something that interests you. If that means Web Development, learn JavaScript/HTML/CSS plus a server-side scripting language. If game development, jump straight into C#/Unity and build a basic game. If data visualization/analytics, download and try a business intelligence platform (QlikView, Tableau, etc), and maybe program some visualizations from scratch. If machines and hardware, learn Python or C++/C and make those robots do something!
+
+All that said, try to keep some limits in mind. If I go anywhere past the 70-80 hours of weekly work/study, I start to lose track. I typically schedule 60-70 hours each week, most of which is unpaid. This explains my lack of income excluding periods of internship.
+
+Besides programming, I still like to listen to my favorite shows, read, sleep, eat, and relax. I like planning out each day as a way of saying, "I am going to spend this much time programming and that much time doing everything else." This approach to scheduling is as flexible as it is productive.
+
+Oh right, I almost forgot to mention College. College feels more like a resume booster than a skill booster for internships. My opinion may change over the course of next year. The first year of College tends to lack a lot of programming courses.
+
+95% of the skills used in my previous two internships were self-taught. While College teaches some interesting stuff, most of it does not matter in the business world. Again, given another year I may completely change my mind. Regardless of my opinion, the Internet covers every bit of useful information. The only catch being you have to search for it. I suggest starting/continuing your journey [here](https://www.freecodecamp.org).
+
+## Final Words of Advice
+
+If you are graduating from high school and contemplating a Computer Science degree, go for it. You can earn the degree while self-teaching, which results in the best of both worlds. There is a good chance you will lose out on scholarships if you opt for coding bootcamp.
+
+If you are switching careers, skip College for a coding bootcamp. You could also embark on the entirely self-taught route. Use the Internet and its free resources to their full potential.
+
+Self-teach yourself as much as possible no matter what you decide. Teaching yourself new material will carry you through the rest of your career. Learning must ensue as technologies come-and-go.
+
+In College, you should be perfecting your craft so that you can tackle the real world. I understand working retail/fast-food/server positions provide a solid source of income, but what if you could earn that same income while kick-starting your career?
+
+Internships allow for that. I have no regrets about my past two internships. I hope to undertake several more. Nothing is ever guaranteed. Yet I take heart in curving the chances of failure with each passing hour of programming. You can do the same starting today.
+`
+});
+
+
+/***/ }),
+
+/***/ "./src/assets/articles/list/starting_a_blog.js":
+/*!*****************************************************!*\
+  !*** ./src/assets/articles/list/starting_a_blog.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  id: '1',
+  topic: 'Life & Wellness',
+  date: '08/13/2018',
+  title: 'Starting a Blog',
   image: '../../assets/articles/images/stock_desert.jpg',
   content: `
-Another Heading
+Starting a Blog
 ===============
+##### 08/13/2018
 
 ![Empty Desert](../../assets/articles/images/stock_desert.jpg)
 
-This is a sub-heading!
+### Introduction
+
+Writing clarifies my thinking. My mind is a jumble of thoughts, fears, and ambitions lacking organization. Committing the jumble to paper helps me sort everything out. To that end, I am using a word processor in place of paper to produce this blog.
+
+I know have an outlet for typing things down. Foregoing the pen and paper for keyboard and screen does not change much. The means are inconsequential to the act of writing. I will mostly refer to it as blog posting given the context of this website.
+
+This blog website acts as a public display for my writing. Each post will derive from my own thoughts based on recent experiences. I will attempt to capture my opinions overtime. A mental timeline in the form of my blog will exist after a year or so. Each post would be representative of what I was thinking about during that time.
+
+I cannot, on a weekly basis, type up every contemplation. That consumes too much time and sanity. I must isolate what I find most significant and type it into a single article. Repeat this process each week so that I fall into a consistent, productive rhythm.
+
+Weekly articles forms part of this website's mission. Portfolio projects and resume building will carry on sporadically. Articles are something I can always guarantee. From my experience, each week always has something worth writing/typing about.
+
+Excluding "Example Article", this marks my very first blog post. There is some risk to consider when committing to a weekly blog. I will encounter weeks that thinly spread my hours of productivity. The temptation to skip the blog for a week would arise. Personal self-discipline would determine whether I give in or push through.
+
+Discipline is a career necessity. I need it for more than writing this blog. This blog serves to improve my self-discipline while constructing a mental timeline. Two birds one stone.
+
+### My Corner of the Internet
+
+In the Home introduction for this website, I mention "my corner of the internet". This phrase implies a small degree of freedom. With it I can add onto this website as preferred. Bare in mind, this makes me responsible for the website's success or failure. It can go either way and I only have myself to blame.
+
+Hosting a single website is hardly worth priding in. The content I post on the website can change that. That said, I do intend to keep the scope of this website small. Posting thoughts, projects, and work-related documents defines its use-case.
+
+I would like to see a crude user-login system so that people can interact with the website as themselves. These kinds of features are pending future development.
+
+For the most part, I imagine this website as a notice board for sharing information relevant to me. Any project I invest massive amounts of time in would be a good example.
+
+This website currently functions more as a resume than a public attraction. That will change with time. Humble beginnings for at least for the next several years.
+
+With enough time, commitment, and development, this website will flourish. Improving my skills as a developer and writer comes first however. An old saying states 10,000 hours as the bare minimum in time spent. Thing is, writing and developing are separate processes. 20,000 hours sounds much more reasonable for my ambitions.
+
+Development occurs per code-related projects and updating this blog. Posts will of course occur weekly. My goal for each article is ~1000 words, and those words must be meaningful without filler.
+
+### Technologies Backing this Blog
+
+This Website runs off of NodeJS and Express. I use Angular to streamline Front End development. A cloud-hosted MongoDB database saves persistent information like user comments and messages.
+
+NodeJS is my strongest programming language. I have experience with Java/C++. It turns out these languages see a lot of use in formal schooling. Another nice thing about Node is JavaScript. Knowledge of Front End JavaScript translates well into Back End Node scripting.
+
+My skills with React outweigh Angular. I built most of my hobby projects using React after all. I decided to try out Angular for this blog, and I must say, I enjoy the technology. I cannot say I like it more than React. Even so, Google successfully streamlined Front End development, workflow, and testing with Angular. The Front End framework has a bright future ahead of it. I will keep using it at least for this blog.
+
+What about MongoDB? Why NoSQL over SQL? I have nothing against SQL tables. My first internship had me formatting data into excel tables. These tables were then loaded by SQL scripts.
+
+MongoDB meshes nicely with Node and Angular. Hence why the MEAN (MongoDB, Express, Angular, and Node) stack exists. The format of NoSQL is JavaScript Object Notation (JSON). JSON syntax mirrors that of Node's Objects.
+
+A native library of JSON methods installs with Node. These are the same methods available in traditional Front End JavaScript. The two most famous of the bunch being JSON.stringify(...) and JSON.parse(...).
+
+The best-case scenario for MongoDB would have been as an in-memory database. Though implementable, it would have been a hassle to setup.
+
+I cycle this application between two separate machines. A cloud-based solution lets this web application connect regardless of the file-system. It benefits convenience. This is another aspect that will likely change in future development cycles.
+
+### Author and Developer
+
+Let me start this section by saying that I lack the qualifications of a real author and developer. In 20,000 hours that may change. Author and developer is a title I wish to earn with enough hard work translating into ~20,000 hours. Projects like this blog form the beginning of my 20,000 hour journey.
+
+Chasing these long-term goals involves many short-term objectives. Week-by-week I need to set my sights on getting things done. Accomplishments by which to measure progress help maintain motivation. Momentum is key and that means keeping the ball rolling.
+
+These past couple days exemplify lost motivation. I literally fell flat on my face trying to get the ball rolling yesterday (imagine a head hitting a table). Today has gone much better, but I still feel guilty for days like yesterday where I fail. Those days happen every know and then when pursuing mastery.
+
+Writing down a list of objectives makes getting started for the day easier. Planning out what to do before proceeding alleviates so much frustration.
+
+I take solace in the process: start, struggle, progress, and stop. Over many days it evolves into trusting the process altogether. I do not want to undermine all my efforts up until now by compromising trust. Mistakes are just as inevitable as triumphs. Sticking it out through the mistakes requires trusting/believing in myself.
+
+### Conclusion
+
+Thank you for reading through this first installment to my blog. I will work hard to improve these articles each week.
+
+Come back next week where I will talk about internships. I have participated in two separate internships over the past year. Each one proved a distinct experience in both co-worker morale and office workload.
+
+For stories to read up on and tips to take advantage of for internships, come back next Monday!
+`
+});
+
+
+/***/ }),
+
+/***/ "./src/assets/articles/list/teaching_assistant.js":
+/*!********************************************************!*\
+  !*** ./src/assets/articles/list/teaching_assistant.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+    id: '4',
+    topic: 'Technology & Education',
+    date: '09/03/2018',
+    title: 'Teaching Assistant',
+    image: '../../assets/articles/images/stock_book_study.jpg',
+    content: `
+Teaching Assistant
+==================
+##### 09/03/2018
+
+![Default Picture](../../assets/articles/images/stock_book_study.jpg)
+
+From my perspective as a student, the classroom is no big deal. When asked to teach, the classroom becomes something else. My perspective shifts to teacher. I have to be more involved than ever before if I want the class to succeed.
+
+The class does not succeed without enough engagement. I believe classroom success corresponds the level of student engagement. So, I want every student involved throughout the duration of the class. I am not alone in this desire. Me and my assigned partner must work together to engage the students.
+
+It helps to have a plan going into the classroom. The plan is simple, and it includes frequent interaction with the class. At the start of class, the students must quiet down, acknowledge their goal, and listen to further instructions. After that, it is a matter of us, the instructors, looking as bored as possible.
+
+Of course, looks can be deceiving. I was advised, "looking bored leads to more questions". Based off last week's class, this advice is true. Students asked many questions as me and my partner patrolled the classroom. Looks of sheer boredom seemed to motivate students to pull us aside and ask away.
+
+Answering people's questions was the most fulfilling part of teaching class. It was my first time teaching a class so I had no idea of its satisfaction. Feigning boredom is a small price to pay for such satisfaction.
+
+The hardest part was moments before the start of class. Everything up until the last minute was going wrong. I remember how desperate I was to get the projector working by the beginning of class. I was up-and-running two minutes after the fact. I was lucky to find someone next-door who knew how to fix the projector.
+
+The rest of the class went very smoothly. The class moved from introductions to the end of class without issue. Granted, the first class is always the easiest in terms of coursework. I guess the true test of a class' mettle arises as assignments grow in complexity. I assume student perseverance plus instructor competence will determine the class' effectiveness.
+
+I say "I assume" and "I guess" to communicate my lack of experience. Last week was only one of many classes to come. I hope to witness lots of student success. I am responsible for part of that success moving forward.
+
+The students showed many positive signs and habits in class. They were a little rowdy at first. They quickly settled down when I asked their attention. This makes me optimistic for the students' future. They can focus, work together, and produce results. Most of the class finished their assignments by the ending of class. Those who did not finish were just as admirable.
+
+Another mistake I made: misplacing the instructions provided by the supervising professor. I had a decent memory of most of the instructions, but there were a couple things I forgot to go over in class. Thankfully, my class uses Piazza as a social forum for facilitating class communication. Students can answer each others questions on Piazza. Instructors can also answer questions and make general announcements. I used Piazza this past week to notify students of details I missed mentioning in class.
+
+Another nice thing about teaching is the pay. The opportunity to earn money while sharing my passion for technology is a blessing. I only work 15-20 hours a week too. This leaves me with enough time to tackle my classes plus a few other obligations.
+
+Granted, pay is definitely not the main motivation. I worked in a grocery store long enough to appreciate the importance of relevant work experience. For anyone considering a teacher assistant position, remember that teaching is one of the most sought after skills. Learning is good but teaching assures a thorough understanding of the material. No one wants to teach nonsense.
+
+Alright, that is it for this week. I wish I had more to say on the matter. I think I will revisit the subject following the semester's conclusion. For now, it is time to circle back to the Life & Wellness category. I will write about some of my life habits next week. I consider some habits worthwhile to succeed while others not-so-much. Come back next week to find out more!
 `
 });
 
@@ -1904,12 +2160,15 @@ This is a sub-heading!
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
-/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
 
 
-// enableProdMode();
-Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_0__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_1__["AppModule"])
+
+// production only
+Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
     .catch(function (err) { return console.log(err); });
 
 
@@ -1922,7 +2181,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_0__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Workshop\jgsimmons.me\angular-src\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Workshop\jgsimmons.me\development\angular-src\src\main.ts */"./src/main.ts");
 
 
 /***/ }),

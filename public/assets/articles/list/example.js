@@ -1,8 +1,7 @@
-import { v4 } from 'uuid';
-
 export default {
-    id: v4(),
-    topic: 'Technology',
+    id: '0',
+    topic: 'Technology & Education',
+    date: '06/15/2018',
     title: 'Example Article',
     image: '../../assets/articles/images/default_image.jpg',
     content: `

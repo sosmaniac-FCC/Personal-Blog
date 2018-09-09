@@ -22,14 +22,12 @@ mongoose.connect(process.env.MONGO_URI);
 mongoose.Promise = bluebird;
 
 // development
-app.use(cors());
+// app.use(cors());
 // production
-/*
 app.use(cors({
   origin: true,
   methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS']
 }));
-*/
 app.use(express.static(path.resolve(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
