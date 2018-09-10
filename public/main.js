@@ -1804,8 +1804,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _list_example_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./list/example.js */ "./src/assets/articles/list/example.js");
 /* harmony import */ var _list_fall_semester_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./list/fall_semester.js */ "./src/assets/articles/list/fall_semester.js");
 /* harmony import */ var _list_internships_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./list/internships.js */ "./src/assets/articles/list/internships.js");
-/* harmony import */ var _list_starting_a_blog_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./list/starting_a_blog.js */ "./src/assets/articles/list/starting_a_blog.js");
-/* harmony import */ var _list_teaching_assistant_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./list/teaching_assistant.js */ "./src/assets/articles/list/teaching_assistant.js");
+/* harmony import */ var _list_scheduling_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./list/scheduling.js */ "./src/assets/articles/list/scheduling.js");
+/* harmony import */ var _list_starting_a_blog_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./list/starting_a_blog.js */ "./src/assets/articles/list/starting_a_blog.js");
+/* harmony import */ var _list_teaching_assistant_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./list/teaching_assistant.js */ "./src/assets/articles/list/teaching_assistant.js");
+
 
 
 
@@ -1816,8 +1818,9 @@ __webpack_require__.r(__webpack_exports__);
     example: _list_example_js__WEBPACK_IMPORTED_MODULE_0__["default"],
     fall_semester: _list_fall_semester_js__WEBPACK_IMPORTED_MODULE_1__["default"],
     internships: _list_internships_js__WEBPACK_IMPORTED_MODULE_2__["default"],
-    starting_a_blog: _list_starting_a_blog_js__WEBPACK_IMPORTED_MODULE_3__["default"],
-    teaching_assistant: _list_teaching_assistant_js__WEBPACK_IMPORTED_MODULE_4__["default"]
+    scheduling: _list_scheduling_js__WEBPACK_IMPORTED_MODULE_3__["default"],
+    starting_a_blog: _list_starting_a_blog_js__WEBPACK_IMPORTED_MODULE_4__["default"],
+    teaching_assistant: _list_teaching_assistant_js__WEBPACK_IMPORTED_MODULE_5__["default"]
 });
 
 
@@ -1995,6 +1998,61 @@ Self-teach yourself as much as possible no matter what you decide. Teaching your
 In College, you should be perfecting your craft so that you can tackle the real world. I understand working retail/fast-food/server positions provide a solid source of income, but what if you could earn that same income while kick-starting your career?
 
 Internships allow for that. I have no regrets about my past two internships. I hope to undertake several more. Nothing is ever guaranteed. Yet I take heart in curving the chances of failure with each passing hour of programming. You can do the same starting today.
+`
+});
+
+
+/***/ }),
+
+/***/ "./src/assets/articles/list/scheduling.js":
+/*!************************************************!*\
+  !*** ./src/assets/articles/list/scheduling.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+    id: '5',
+    topic: 'Life & Wellness',
+    date: '09/10/2018',
+    title: 'Scheduling',
+    image: '../../assets/articles/images/stock_white_board_planning.jpg',
+    content: `
+Scheduling
+==========
+##### 09/10/2018
+
+![White Board Planning](../../assets/articles/images/stock_white_board_planning.jpg)
+
+Monday through Friday I wake up, go to class/work, eat, study, exercise (hopefully), and repeat. By the end of the day, I am exhausted from head to toe. I recover by sleeping ~7 hours before the next day begins.
+
+Having a tool to help organize each day is absolutely necessary. To this end, the Internet provides so many options. Some are fully-featured to the point of enterprise. I personally stick with notepad as my go-to scheduler. I appreciate the bells and whistles accompanying programs like Trello, Jira, KanbanFlow, etc. I still prefer the simplicity of notepad when it comes to personal scheduling. Scheduling across an entire team would not work using notepad.
+
+I pin some of my notepad documents onto my Windows desktop. One of those pinned documents contains details defining my schedule, budget, to-dos, reminders, and miscellaneous notes. I delimit this document's sections with dashes to keep it organized. I can throw the document onto my Cloud provider if I ever need to access it from another device.
+
+This notepad document performs similarly to a medieval notice board. This is what towns/hamlets would build and maintain to keep their population informed. Notepad is where I post all sorts of things pertaining to me, myself, and I. That is OK considering I am the document’s sole viewer and editor.
+
+Enough with the analogy. Beyond the means of scheduling there lies the technique. Per upcoming event, I type a single line of text describing the event name, time period, and any other event-related information. Workshops, celebrations, and career fairs are good examples of what I might put under this section.
+
+Regularly reoccurring events go into a weekly schedule under my upcoming events. A weekly schedule keeps me from having to retype events I engage in every week. Classes, work, and club meetings fall under this category.
+
+There is a bonus section called “Theoretical Schedule”. I analyze my weekly schedule and write down my thoughts here. This section answers high-level questions like “Approximately how many hours will I be working/studying?” or “What sort of daily habits will help me keep-up with the workload?”.
+
+Next up is goals. I have a list of goals I will achieve within the next 3-5 years. I recently turned 20 and one of those goals is full independence. I want to be a pillar to my family rather than an ongoing liability. A second one states ‘Master Programmer’. My interpretation of this object changes every month. Right now, it means being able to write different kinds of software (Websites, Games, Servers) for multiple platforms (Linux, Mac, Windows, Android, iOS). I will leave the rest of the goals to your own curiosity. Send me a message if you are curious to know of them!
+
+One more goals section. This one is project-oriented. It lists out a whole bunch of project ideas and the technologies I would use to build them. These goals are more concrete than the previous section’s. They are buildable projects after all. I work on them whenever I have the time.
+
+Another section summarizes my financials. By the end of this semester I will be a senior with roughly $9300-9400 in student debt. I cannot tolerate unmanaged risk. Knowing my debt means understanding the opportunity cost of college. I also avoid having to suffer a post-graduate financial freak-out.
+
+Lastly, my notes section. A notepad document would be too ironic without a place for typing notes. These notes are usually not schedule-related either. I use the command-line a lot, so I type out some of the commands I use within this section. Other information includes the IP for the web server hosting my website. Another line contains the database connection string for my local SQL Server. These notes boil down to general-purpose DevOps minus a few exceptions.
+
+As you can tell, I treat my notepad documents very seriously! Bad joke aside, I like notepad because it is a simple way of self-scheduling. It takes care of all of my needs without the bells and whistles of modern software.
+
+I can see myself switching to Microsoft Office in the future. I used it throughout my internship this past Summer. Even then, I still used notepad here-and-there. In a fast-moving office environment, setting reminders on top of a calendar ensured I never missed a beat. It turns out bells and whistles can be massively beneficial if not outright excessive.
+
+Scheduling is just one component in my day-to-day survival. Next week’s article will be another “Life and Wellness” article exploring my approach to maintaining good health. I will discuss the food, exercise, and hygiene habits that give me more energy and boost my self-confidence. Until next Monday!
 `
 });
 
