@@ -27,7 +27,7 @@ There is a bonus section called “Theoretical Schedule”. I analyze my weekly 
 
 Next up is goals. I have a list of goals I will achieve within the next 3-5 years. I recently turned 20 and one of those goals is full independence. I want to be a pillar to my family rather than an ongoing liability. A second one states ‘Master Programmer’. My interpretation of this object changes every month. Right now, it means being able to write different kinds of software (Websites, Games, Servers) for multiple platforms (Linux, Mac, Windows, Android, iOS). I will leave the rest of the goals to your own curiosity. Send me a message if you are curious to know of them!
 
-One more goals section. This one is project-oriented. It lists out a whole bunch of project ideas and the technologies I would use to build them. These goals are more concrete than the previous section’s. They are buildable projects after all. I work on them whenever I have the time.
+One more section for goals; this one is project-oriented. It lists out a whole bunch of project ideas and the technologies I would use to build them. These goals are more concrete compared to the previous section. They consist of developer projects. I work on them whenever I have the time.
 
 Another section summarizes my financials. By the end of this semester I will be a senior with roughly $9300-9400 in student debt. I cannot tolerate unmanaged risk. Knowing my debt means understanding the opportunity cost of college. I also avoid having to suffer a post-graduate financial freak-out.
 
